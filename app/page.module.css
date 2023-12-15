@@ -1,0 +1,101 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.shop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: var(--max-width);
+}
+
+.titulo {
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+.subtitulo {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.card {
+  display: inline-flex;
+  max-width: 20%;
+  border: 2px solid #c7b5da;
+  min-height: 50vh;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 5px grey;
+  border:2px solid transparent;
+  transition: border-color 0.25s;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.imagen {
+  width: 100%;
+  margin: 0;
+  height: auto;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.navbar {
+  
+  background-color: rgb(248, 248, 229);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo {
+  position: relative;
+}
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover span {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  
+}
