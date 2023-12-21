@@ -3,7 +3,7 @@ export const Cart = () => {
 
     
     return (
-        <>
+        
         <div className="carrito">
             <h3>Tu carrito</h3>
             
@@ -16,6 +16,6 @@ export const Cart = () => {
             <p>Total : {precioTotal}</p>
             <button>Comprar</button>
         </div>
-        </>
+        
     )
 }

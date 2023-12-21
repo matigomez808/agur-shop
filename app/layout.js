@@ -1,22 +1,21 @@
-import { Montserrat } from 'next/font/google'
-import Navbar from './Components/Navbar'
-import Footer from './Components/Footer'
-import './globals.css'
 
+import { Montserrat } from 'next/font/google'
+import Navbar from '@Components/Navbar'
+import Footer from '@Components/Footer'
+import Container from '@Components/Container'
+import './styles/globals.css'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Agur Shop',
-  description: 'Shop online de Agur lenceria',
-}
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ES">
       <body className={montserrat.className}>
         <Navbar />
-        {children}
+        <Container> 
+          {children}
+        </Container>
         <Footer />
       </body>
     </html>

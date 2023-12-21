@@ -1,3 +1,4 @@
+
 export const PRODUCTS = [
     {
       id: 1,
@@ -58,5 +59,126 @@ export const PRODUCTS = [
       coleccion: 'Ensueños',
       categoria: 'Vedetina-less',
       imagen: 'https://agurproducts.s3.us-east-005.backblazeb2.com/agurPikchur-2.jpg'
-    }
-  ];
+    },
+{
+    id: 14,
+    nombre: '',
+    precio: 1000,
+    descripcion: '',
+    talle: '',
+    color: '',
+    stock: 5,
+    coleccion: '',
+    categoria: '',
+    imagen: ''
+  },
+  {
+    id: 15,
+    nombre: '',
+    precio: 1000,
+    descripcion: '',
+    talle: '',
+    color: '',
+    stock: 5,
+    coleccion: '',
+    categoria: '',
+    imagen: ''
+  },
+  {
+    id: 16,
+    nombre: '',
+    precio: 1000,
+    descripcion: '',
+    talle: '',
+    color: '',
+    stock: 5,
+    coleccion: '',
+    categoria: '',
+    imagen: ''
+  },
+  {
+    id: 17,
+    nombre: '',
+    precio: 1000,
+    descripcion: '',
+    talle: '',
+    color: '',
+    stock: 5,
+    coleccion: '',
+    categoria: '',
+    imagen: ''
+  },
+  {
+    id: 18,
+    nombre: '',
+    precio: 1000,
+    descripcion: '',
+    talle: '',
+    color: '',
+    stock: 5,
+    coleccion: '',
+    categoria: '',
+    imagen: ''
+  },
+  {
+    id: 19,
+    nombre: '',
+    precio: 1000,
+    descripcion: '',
+    talle: '',
+    color: '',
+    stock: 5,
+    coleccion: '',
+    categoria: '',
+    imagen: ''
+  },
+  {
+    id: 20,
+    nombre: '',
+    precio: 1000,
+    descripcion: '',
+    talle: '',
+    color: '',
+    stock: 5,
+    coleccion: '',
+    categoria: '',
+    imagen: ''
+  },
+  {
+    id: 21,
+    nombre: '',
+    precio: 1000,
+    descripcion: '',
+    talle: '',
+    color: '',
+    stock: 5,
+    coleccion: '',
+    categoria: '',
+    imagen: ''
+  },
+  {
+    id: 22,
+    nombre: '',
+    precio: 1000,
+    descripcion: '',
+    talle: '',
+    color: '',
+    stock: 5,
+    coleccion: '',
+    categoria: '',
+    imagen: ''
+  },
+  {
+    id: 23,
+    nombre: '',
+    precio: 1000,
+    descripcion: '',
+    talle: '',
+    color: '',
+    stock: 5,
+    coleccion: '',
+    categoria: '',
+    imagen: ''
+  },
+
+];

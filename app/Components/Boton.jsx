@@ -1,8 +1,9 @@
 import React from "react"
+import Link from 'next/link'
 
-const Boton = (style, onClick, children) => {
+const Boton = (style, linkTo, children) => {
     return(
-        <Button style={style} onClick={onClick} >{children}</Button>
+         <Link className={style} href={{linkTo}}>{children}</Link>
     )
 }
 

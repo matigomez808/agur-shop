@@ -1,4 +1,4 @@
-import styles from '../page.module.css'
+import styles from '@Styles/page.module.css'
 
 function ItemCards(product) {
     const newProd = {...product.data};
@@ -7,11 +7,11 @@ function ItemCards(product) {
         <div className={styles.card} >
             
             
-            <img className={styles.imagen} src={newProd.imagen} alt="imagen no disponible" />
-            <p className="nombre">{newProd.nombre}</p>
+            <img className={styles.cardImg} src={newProd.imagen} alt="imagen no disponible" />
+            <p className={styles.cardName}>{newProd.nombre}</p>
 
-            <p className="precio">${newProd.precio}</p>
-            <button >Agregar al carrito</button>
+            <p className={styles.cardPrecio}>${newProd.precio}</p>
+            <button className={styles.cardBtn}>Agregar al carrito</button>
         </div>
     );
 };

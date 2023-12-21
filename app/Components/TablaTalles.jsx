@@ -1,6 +1,6 @@
 const TablaTalles = () => {
     return (
-        <>  
+          
         <div>
             <h3>Cual es mi talle?</h3>
             <p>Esta es mi propuesta de talles, sirve a modo de guía para saber qué talle es para vos dentro de los productos del sitio</p>
@@ -66,7 +66,7 @@ const TablaTalles = () => {
             <p>Radio se mide asi</p>
             <p>Alto de tiro se mide asi</p>
         </div>
-        </>
+        
     )
 }
 

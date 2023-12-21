@@ -1,0 +1,250 @@
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+/*Banner Collage*/
+
+.BannerCollage {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  height: 55vh;
+  grid-gap: 10px;
+  
+}
+
+.BannerItem1 {
+  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-29.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.BannerItem2 {
+  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-24.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/2;
+  grid-row: 2/5;
+}
+
+.BannerItem3 {
+  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-31.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/5;
+  grid-row: 5/5;
+}
+
+.BannerItem4 {
+  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-32.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 2/4;
+  grid-row: 2/5;
+}
+
+.BannerItem5 {
+  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-1.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 4/6;
+  grid-row: 1/3;
+}
+
+.BannerItem6 {
+  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-11.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 4/5;
+  grid-row: 3/5;
+}
+
+.BannerItem7 {
+  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-14.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 5/6;
+  grid-row: 3/6;
+}
+
+.BannerItem8 {
+  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-16.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 6/8;
+  grid-row: 1/6;
+}
+
+/*Shop Grid*/
+.shop {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  
+  margin: auto;
+  width: var(--max-width);
+}
+
+/*Titles*/
+.titulo {
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+ 
+}
+.subtitulo {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  
+}
+
+
+
+/*Navbar*/
+.navbar {
+  
+  background-color: rgb(248, 248, 229);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.logoNav {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.botonera {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+}
+.botonNav {
+  text-decoration: none;
+  margin-right: 5px;
+  font-variant: small-caps;
+  border: none;
+  min-height: 70px;
+  min-width: 80px;
+  font-size: 100%;
+  background-color: rgb(var(--background-start-rgb));
+  z-index: 1;
+  border-radius: 100%;
+  position: relative;
+  transition: font-weight 0.1s ease-in-out;
+}
+
+.botonNav::after {
+  content: ""; /* Empty content creates the overlay element */
+  position: absolute; /* Overlays the image content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%; /* Creates circular shape */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.2s ease-in-out; /* Smooth fade-in animation */
+  z-index: 1;
+  /* Adjust these properties for desired bubble size and color */
+  background-color: rgb(var(--amarillo-agur-rgb));
+ 
+}
+/*Itemcard*/
+
+.card {
+  box-sizing: border-box;
+}
+
+.card .cardPrecio,
+.card .cardName,
+.card .cardBtn {
+  display: none;
+  z-index: 1;
+
+}
+.cardImg {
+
+  width: 100%;
+  margin: 0;
+  height: auto;
+  align-self: center;
+  border-radius: 5px;
+  position: relative;
+}
+.cardImg::before {
+ 
+  content: ""; /* Empty content creates the overlay element */
+  position: absolute; /* Overlays the image content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Set your desired pastel pink with transparency */
+  background-color: rgba(255, 192, 203, 0.9);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.2s ease-in-out; /* Smooth fade-in animation */
+  z-index: 1; /* Place the overlay above the image content */
+}
+/*Footer*/
+.footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo {
+  position: relative;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover : hover) and (pointer: fine) {
+  .botonNav:visited{
+    text-decoration: none;
+  }
+
+  .botonNav:hover {
+    font-weight:bolder ;
+    stroke-width: 2;
+    }
+    
+  }
+  
+  .card:hover { 
+    /* Show information elements */
+    .cardPrecio,
+    .cardName,
+    .cardBtn {
+      display: inline-block; /* Change from 'none' to reveal on hover */
+    }
+    /* Make overlay visible */
+    .cardImg::before {
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+/* Mobile */
+@media (max-width: 700px) {
+  
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  
+}

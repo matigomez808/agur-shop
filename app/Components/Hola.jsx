@@ -1,7 +1,7 @@
 
 export const Hola = () => {
     return (
-        <>
+       
             <div className='hola'>
                 
                 <p className='acercaDe'>
@@ -16,6 +16,6 @@ export const Hola = () => {
                     <img className='pic' src="./anita.jpg" alt="Esta es una foto de anita" />
                 </div>
             </div>
-        </>
+        
     )
 }
