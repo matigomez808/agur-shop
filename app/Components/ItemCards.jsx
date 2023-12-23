@@ -1,4 +1,5 @@
 import styles from '@Styles/page.module.css'
+import Image from 'next/image';
 
 function ItemCards(product) {
     const newProd = {...product.data};
@@ -7,7 +8,13 @@ function ItemCards(product) {
         <div className={styles.card} >
             
             
-            <img className={styles.cardImg} src={newProd.imagen} alt="imagen no disponible" />
+            <Image 
+            className={styles.cardImg} 
+            src={newProd.imagen} 
+            alt="imagen no disponible"
+            
+            
+            />
             <p className={styles.cardName}>{newProd.nombre}</p>
 
             <p className={styles.cardPrecio}>${newProd.precio}</p>

@@ -1,10 +1,11 @@
+import Image from "next/image"
 
 export const Hola = () => {
     return (
        
-            <div className='hola'>
+            <div >
                 
-                <p className='acercaDe'>
+                <p >
                     Hola, soy Anita y soy quien esta detrás de Agur. 
                     Este es un emprendimiento de ropa interior artesanal y a medida. Con este espacio busco compartir mi vision de lo que la ropa interior y la sensualidad pueden ser. 
                     Creo que el mercado masivo no se encarga de trabajar esas ideas mas alla del marketing y la hegemonía. 
@@ -12,8 +13,8 @@ export const Hola = () => {
                      Espero aquí puedan encontrar algo que les guste. 
                      Saludos!
                 </p>
-                <div className='img'>
-                    <img className='pic' src="./anita.jpg" alt="Esta es una foto de anita" />
+                <div >
+                    <Image className='pic' src="https://agurproducts.s3.us-east-005.backblazeb2.com/agurPics.jpg" alt="Esta es una foto de anita" />
                 </div>
             </div>
         

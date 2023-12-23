@@ -9,7 +9,7 @@ function Navbar() {
     
       <div className={styles.navbar}>
         <div className={styles.botonera}>
-          <Link href={'/hola'} className={styles.botonNav} on>Hola!</Link>
+          <Link href={'/hola'} className={styles.botonNav}>Hola!</Link>
           <Link href={'/'} className={styles.botonNav}>Shop</Link>
           <Link href={'/talles'} className={styles.botonNav}>Talles</Link>
         </div>

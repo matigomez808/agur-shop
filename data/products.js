@@ -1,3 +1,14 @@
+import prod1 from '/public/images/productos/agurPicsSegundaTanda.png'
+import prod2 from '/public/images/productos/agurPicsSegundaTanda-22.png'
+import prod3 from '/public/images/productos/agurPicsSegundaTanda-16.png'
+import prod4 from '/public/images/productos/agurPicsSegundaTanda-5.png'
+import prod5 from '/public/images/productos/agurPicsSegundaTanda-17.png'
+import prod6 from '/public/images/productos/agurPicsSegundaTanda-10.png'
+import prod7 from '/public/images/productos/agurPicsSegundaTandaB.png'
+import prod8 from '/public/images/productos/agurPicsSegundaTanda-13.png'
+
+
+
 const PRODUCTOS = [
     
     {
@@ -10,7 +21,7 @@ const PRODUCTOS = [
       stock: 5,
       coleccion: 'Trasluz',
       categoria: ['Bombacha', "Trusa"],
-      imagen: 'https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda.png'
+      imagen: prod1
     },
     {
       id: 7,
@@ -22,7 +33,7 @@ const PRODUCTOS = [
       stock: 5,
       coleccion: 'Trasluz',
       categoria: ['Bombacha', "Trusa"],
-      imagen: 'https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-22.png'
+      imagen: prod2
     },
     {
       id: 8,
@@ -34,7 +45,7 @@ const PRODUCTOS = [
       stock: 5,
       coleccion: 'Trasluz',
       categoria: ['Bombacha', "Trusa"],
-      imagen: 'https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-16.png'
+      imagen: prod3
     },
     {
       id: 9,
@@ -46,7 +57,7 @@ const PRODUCTOS = [
       stock: 5,
       coleccion: 'Trasluz',
       categoria: ['Bombacha', 'Trusa'],
-      imagen: 'https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-5.png'
+      imagen: prod4
     },
     {
       id: 10,
@@ -58,7 +69,7 @@ const PRODUCTOS = [
       stock: 5,
       coleccion: 'Trasluz',
       categoria: ['Corpiño', 'Triangulos'],
-      imagen: 'https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-17.png'
+      imagen: prod5
     },
     {
       id: 11,
@@ -70,7 +81,7 @@ const PRODUCTOS = [
       stock: 5,
       coleccion: 'Trasluz',
       categoria: ['Corpiño', 'Triangulos'],
-      imagen: 'https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-10.png'
+      imagen: prod6
     },
     {
       id: 12,
@@ -82,7 +93,7 @@ const PRODUCTOS = [
       stock: 5,
       coleccion: 'Ensueños',
       categoria: ['Corpiño', 'Triangulos'],
-      imagen: 'https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTandaB.png'
+      imagen: prod7
     },
     {
       id: 13,
@@ -94,7 +105,7 @@ const PRODUCTOS = [
       stock: 5,
       coleccion: 'Trasluz',
       categoria: ['Corpiño', 'Triangulos'],
-      imagen: 'https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-13.png'
+      imagen: prod8
     },
   ];
 
