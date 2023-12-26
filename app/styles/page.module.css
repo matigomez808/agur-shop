@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  padding: 3em;
   min-height: 100vh;
   max-width: 95vw;
 }
@@ -23,7 +23,7 @@
 }
 
 .BannerItem1 {
-  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-29.png");
+  background-image: url("../../public/images/agurPicsSegundaTanda-29.png");
   background-size: cover;
   background-position: center;
   grid-column: 1/4;
@@ -31,7 +31,7 @@
 }
 
 .BannerItem2 {
-  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-24.png");
+  background-image: url("../../public/images/agurPicsSegundaTanda-24.png");
   background-size: cover;
   background-position: center;
   grid-column: 1/2;
@@ -39,7 +39,7 @@
 }
 
 .BannerItem3 {
-  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-31.png");
+  background-image: url("../../public/images/agurPicsSegundaTanda-31.png");
   background-size: cover;
   background-position: center;
   grid-column: 1/5;
@@ -47,7 +47,7 @@
 }
 
 .BannerItem4 {
-  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-32.png");
+  background-image: url("../../public/images/agurPicsSegundaTanda-32.png");
   background-size: cover;
   background-position: center;
   grid-column: 2/4;
@@ -55,7 +55,7 @@
 }
 
 .BannerItem5 {
-  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-1.png");
+  background-image: url("../../public/images/agurPicsSegundaTanda-1.png");
   background-size: cover;
   background-position: center;
   grid-column: 4/6;
@@ -63,7 +63,7 @@
 }
 
 .BannerItem6 {
-  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-11.png");
+  background-image: url("../../public/images/agurPicsSegundaTanda-11.png");
   background-size: cover;
   background-position: center;
   grid-column: 4/5;
@@ -71,7 +71,7 @@
 }
 
 .BannerItem7 {
-  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-14.png");
+  background-image: url("../../public/images/agurPicsSegundaTanda-14.png");
   background-size: cover;
   background-position: center;
   grid-column: 5/6;
@@ -79,7 +79,7 @@
 }
 
 .BannerItem8 {
-  background-image: url("https://agurproducts.s3.us-east-005.backblazeb2.com/segundaTanda/agurPicsSegundaTanda-16.png");
+  background-image: url("../../public/images/productos/agurPicsSegundaTanda-16.png");
   background-size: cover;
   background-position: center;
   grid-column: 6/8;
@@ -99,7 +99,7 @@
   width: 100%;
   font-size: 3rem;
   text-align: center;
- 
+  line-height: 0.5;
 }
 .subtitulo {
   width: 100%;
@@ -111,7 +111,7 @@
 
 /*Navbar*/
 .navbar {
-  
+  height: 115px;
   background-color: rgb(248, 248, 229);
   display: flex;
   flex-direction: row;
@@ -166,34 +166,115 @@
 .card {
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
+  width: 40vh;
+  height: 50vh;
 }
 
-.card .cardPrecio,
-.card .cardName,
-.card .cardBtn {
-  display: none;
+.card .cardPrecio {
+  font-size: xx-large;
+  font-weight: 500;
   z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  bottom: 5rem;
+  right: 1rem;
+  
+}
+.card .cardName {
+  font-size: x-large;
+  font-weight: 400;
+  font-variant: small-caps;
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  bottom: 2.5rem;
+  right: 1rem;
+}
 
+.cardBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
+.card .cardBtnInfo {
+  font-variant: small-caps;
+  font-size: 1.1rem;
+  z-index: 1;
+  
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 50%;
+  border: 0.5px solid transparent;
+  background-color: rgb(var(--rosa-agur-rgb));
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.card .cardBtnAdd {
+  font-variant: small-caps;
+  font-size: 1.1rem;
+  z-index: 1;
+  
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  width: 50%;
+  border: 0.5px solid transparent;
+  background-color: rgb(var(--rosa-agur-rgb));
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+
 .cardImg {
-  width: 100%;
-  height: 45vh;
-  position: relative;
+  width: 40vh;
+  height: 50vh;
 }
-.cardImg::before {
+.card::before {
   content: "";
   position: absolute;
-  top: 50%; /* Adjust depending on desired offset */
-  right: 50%; /* Adjust depending on desired offset */
-  background-color: pink;
-  color:aliceblue;
-  border-radius: 100%;
+  top: 60%; /* Adjust depending on desired offset */
+  left: -20%;
+  background-color: rgb(var(--rosa-agur-rgb));
+  border-radius: 50%;
   opacity: 0; /* Adjust for desired transparency */
-  height: 400px; /* Adjust depending on desired size */
-  width: 400px; /* Adjust depending on desired size */
-  z-index: 500;
-  visibility: visible;
-  display: block;
+  height: 300px; /* Adjust depending on desired size */
+  width: 800px; /* Adjust depending on desired size */
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.divTalles {
+  font-variant: small-caps;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.table {
+  border: 1px solid black;
+  border-collapse: collapse; /* Remove spaces between cells */
+  width: 100%;
+  margin-bottom: 30px;
+  .tr .th {
+    border: 1px solid black;
+  }
+  .tr .td {
+    border: 1px solid black;
+  }
+  
 }
 
 /*Footer*/
@@ -218,15 +299,32 @@
     font-weight:bolder;
   }
   .botonNav:hover svg path {
-    stroke-width: 2;
+    stroke-width: 1.8;
   }
   .botonNav:hover::after {
     opacity: 1;
   }
-  .cardImg:hover {
-    opacity: 0.5;
+  
+  .card:hover::before {
+    transform: scale(1);
+    opacity: 0.7;
   }
- 
+  
+  .card:hover .cardPrecio,
+  .card:hover .cardName,
+  .card:hover .cardBtnInfo,
+  .card:hover .cardBtnAdd {
+  opacity: 1;
+
+}
+  .cardBtnAdd:hover {
+    border: 0.5px solid rgb(var(--amarillo-agur-rgb));
+    background-color: rgb(var(--amarillo-agur-rgb));
+  }
+  .cardBtnInfo:hover {
+    border: 0.5px solid rgb(var(--amarillo-agur-rgb));
+    background-color: rgb(var(--amarillo-agur-rgb));
+  }
 
 }
 

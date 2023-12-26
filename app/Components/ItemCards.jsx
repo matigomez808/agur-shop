@@ -18,7 +18,10 @@ function ItemCards(product) {
             <p className={styles.cardName}>{newProd.nombre}</p>
 
             <p className={styles.cardPrecio}>${newProd.precio}</p>
-            <button className={styles.cardBtn}>Agregar al carrito</button>
+            <div className={styles.cardBtns}>
+            <button className={styles.cardBtnInfo}>+ info</button>
+            <button className={styles.cardBtnAdd}>Agregar al carrito</button>
+            </div>
         </div>
     );
 };

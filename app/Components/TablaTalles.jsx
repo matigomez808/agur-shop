@@ -1,10 +1,12 @@
+import styles from '../styles/page.module.css'
+
 const TablaTalles = () => {
     return (
           
-        <div>
+        <div className={styles.divTalles}>
             <h3>Cual es mi talle?</h3>
             <p>Esta es mi propuesta de talles, sirve a modo de guía para saber qué talle es para vos dentro de los productos del sitio</p>
-            <table>
+            <table className={styles.table}>
                 <tr>
                     <th>Medidas</th>
                     <th>Talle 1</th>
