@@ -2,6 +2,8 @@
 import Shop from '@Components/Shop'
 import Titulo from '@Components/Titulo'
 import BannerCollage from '@Components/BannerCollage'
+import BannerPago from '@Components/BannerPago';
+import BannerInfo from '@Components/BannerInfo';
 import { fetchProducts } from 'utils/api';
 
 
@@ -13,8 +15,12 @@ export default function Home() {
   return (
     
     <>
-      <BannerCollage />
       <Titulo />
+      <BannerCollage />
+      <BannerInfo />
+      
+      
+      <BannerPago />
       <Shop products={shopData} />
     </>
     

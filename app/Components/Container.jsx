@@ -1,9 +1,9 @@
-import styles from '@Styles/page.module.css'
+import defautlStyles from '@Styles/page.module.css'
 
-export default function Container({ children }) {
+export default function Container({ children, styles }) {
 
     return(
-        <main className={styles.main}>
+        <main className={defautlStyles.main || styles.container}>
             {children}
         </main>
     )

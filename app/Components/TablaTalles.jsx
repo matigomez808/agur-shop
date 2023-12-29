@@ -1,12 +1,22 @@
-import styles from '../styles/page.module.css'
+import styles from '@Styles/page.module.css'
+import Image from 'next/image';
+import busto from '../../public/images/contornoBusto.png'
+import bajoBusto from '../../public/images/bajoBusto.png'
+import tiro from '../../public/images/tiro.png'
+import radio from '../../public/images/radio.png'
+import cadera from '../../public/images/cadera.png'
+import Container from '@Components/Container';
+
 
 const TablaTalles = () => {
+    
     return (
           
         <div className={styles.divTalles}>
             <h3>Cual es mi talle?</h3>
             <p>Esta es mi propuesta de talles, sirve a modo de guía para saber qué talle es para vos dentro de los productos del sitio</p>
             <table className={styles.table}>
+                <thead>
                 <tr>
                     <th>Medidas</th>
                     <th>Talle 1</th>
@@ -16,6 +26,8 @@ const TablaTalles = () => {
                     <th>Talle 5</th>
                     <th>Talle 6</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <th>Busto</th>
                     <td>80-85</td>
@@ -61,12 +73,37 @@ const TablaTalles = () => {
                     <td>31</td>
                     <td>32</td>
                 </tr>
+                </tbody>
             </table>
-            <p>Busto se mide asi</p>
-            <p>Bajo busto se mide asi</p>
-            <p>Cadera se mide asi</p>
-            <p>Radio se mide asi</p>
-            <p>Alto de tiro se mide asi</p>
+            <div className={styles.tallesContainer}>
+                <div>
+                    <h4>Busto se mide así:</h4>
+                    <Image
+                    src={bajoBusto} />
+                </div>
+                <div>
+                    <h4>Bajo busto se mide así:</h4>
+                    <Image
+                    src={busto} />
+                </div>
+                <div>
+                    <h4>Cadera se mide así:</h4>
+                    <Image
+                    src={cadera} />
+                </div>
+            </div>
+            <div className={styles.tallesContainerB}>
+                <div>
+                    <h4>Radio se mide así:</h4>
+                    <Image
+                    src={radio} />
+                </div>
+                <div>
+                    <h4>Alto de tiro se mide así:</h4>
+                    <Image
+                    src={tiro} />
+                </div>
+            </div>
         </div>
         
     )

@@ -61,7 +61,7 @@ const PRODUCTOS = [
     },
     {
       id: 10,
-      nombre: 'Corpiño triangulos',
+      nombre: 'Corpiño Triangulos',
       precio: 20000,
       descripcion: 'Corpiño de triangulos negro de tul y encaje con elastico en el escote',
       talle: '3',
@@ -73,7 +73,7 @@ const PRODUCTOS = [
     },
     {
       id: 11,
-      nombre: 'Corpiño triangulos',
+      nombre: 'Corpiño Triangulos',
       precio: 20000,
       descripcion: 'Corpiño rojo de triangulos de tul',
       talle: '3',
@@ -85,7 +85,7 @@ const PRODUCTOS = [
     },
     {
       id: 12,
-      nombre: 'Corpiño triangulos',
+      nombre: 'Corpiño Triangulos',
       precio: 25000,
       descripcion: 'Corpiño de algodon y puntilla rojo y negro',
       talle: '3',
@@ -97,7 +97,7 @@ const PRODUCTOS = [
     },
     {
       id: 13,
-      nombre: 'Corpiño cruzado',
+      nombre: 'Corpiño Cruzado',
       precio: 20000,
       descripcion: 'Corpiño cruzado de tul y encaje en rosa y natural',
       talle: '3',

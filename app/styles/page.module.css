@@ -1,12 +1,9 @@
-
-
-
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3em;
-  min-height: 100vh;
+  margin: 0 auto;
+  min-height: 65vh;
   max-width: 95vw;
 }
 
@@ -18,20 +15,19 @@
   grid-template-rows: repeat(5, 1fr);
   width: 100%;
   height: 55vh;
-  grid-gap: 10px;
-  
+  grid-gap: 7px;
 }
 
 .BannerItem1 {
-  background-image: url("../../public/images/agurPicsSegundaTanda-29.png");
+  background-image: url("../../public/images/assetsB-3.png");
   background-size: cover;
-  background-position: center;
+  background-position: 0px -680px;
   grid-column: 1/4;
   grid-row: 1/2;
 }
 
 .BannerItem2 {
-  background-image: url("../../public/images/agurPicsSegundaTanda-24.png");
+  background-image: url("../../public/images/assetsB-1.png");
   background-size: cover;
   background-position: center;
   grid-column: 1/2;
@@ -39,15 +35,15 @@
 }
 
 .BannerItem3 {
-  background-image: url("../../public/images/agurPicsSegundaTanda-31.png");
+  background-image: url("../../public/images/assets-7.png");
   background-size: cover;
-  background-position: center;
+  background-position: 0px 150px;
   grid-column: 1/5;
   grid-row: 5/5;
 }
 
 .BannerItem4 {
-  background-image: url("../../public/images/agurPicsSegundaTanda-32.png");
+  background-image: url("../../public/images/assetsB-2.png");
   background-size: cover;
   background-position: center;
   grid-column: 2/4;
@@ -55,7 +51,7 @@
 }
 
 .BannerItem5 {
-  background-image: url("../../public/images/agurPicsSegundaTanda-1.png");
+  background-image: url("../../public/images/assetsB-4.png");
   background-size: cover;
   background-position: center;
   grid-column: 4/6;
@@ -63,7 +59,7 @@
 }
 
 .BannerItem6 {
-  background-image: url("../../public/images/agurPicsSegundaTanda-11.png");
+  background-image: url("../../public/images/assetsB.png");
   background-size: cover;
   background-position: center;
   grid-column: 4/5;
@@ -71,7 +67,7 @@
 }
 
 .BannerItem7 {
-  background-image: url("../../public/images/agurPicsSegundaTanda-14.png");
+  background-image: url("../../public/images/assets.png");
   background-size: cover;
   background-position: center;
   grid-column: 5/6;
@@ -79,7 +75,7 @@
 }
 
 .BannerItem8 {
-  background-image: url("../../public/images/productos/agurPicsSegundaTanda-16.png");
+  background-image: url("../../public/images/assetsB-5.png");
   background-size: cover;
   background-position: center;
   grid-column: 6/8;
@@ -96,13 +92,13 @@
 
 /*Titles*/
 .titulo {
-  width: 100%;
+  
   font-size: 3rem;
   text-align: center;
-  line-height: 0.5;
+  
 }
 .subtitulo {
-  width: 100%;
+  
   font-size: 1.5rem;
   text-align: center;
 }
@@ -118,12 +114,8 @@
   justify-content: space-between;
   padding: 1rem;
 }
-.logoNav {
-  width: 100vw;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-}
+
+
 .botonera {
   display: flex;
   min-height: 100%;
@@ -149,17 +141,58 @@
 .botonNav::after {
   content: ""; /* Empty content creates the overlay element */
   position: absolute; /* Overlays the image content */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  transform: scale(0);
+  height: 70px;
+  width:  70px;
   border-radius: 100%; /* Creates circular shape */
   opacity: 0; /* Initially hidden */
-  transition: opacity 0.2s ease-in-out; /* Smooth fade-in animation */
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth fade-in animation */
   z-index: -1;
   /* Adjust these properties for desired bubble size and color */
   background-color: rgb(var(--amarillo-agur-rgb));
  
+}
+
+/* Banner Info */
+.bannerInfo {
+  
+  display: flex;
+  width: 110%;
+  margin: 20px 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--azul-agur-rgb));
+}
+
+.bannerInfo p {
+  display: flex;
+  line-height: 100%;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+/* Banner Pagos */
+
+.bannerPago {
+  
+  display: flex;
+  width: 120%;
+  margin: 20px 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(var(--rojo-agur-rgb));
+}
+
+.bannerPago p {
+  display: flex;
+  line-height: 100%;
+  align-items: center;
+  
+  font-size: 19px;
 }
 /*Itemcard*/
 
@@ -241,19 +274,19 @@
   content: "";
   position: absolute;
   top: 60%; /* Adjust depending on desired offset */
-  left: -20%;
+  left: -15%;
   background-color: rgb(var(--rosa-agur-rgb));
   border-radius: 50%;
   opacity: 0; /* Adjust for desired transparency */
   height: 300px; /* Adjust depending on desired size */
-  width: 800px; /* Adjust depending on desired size */
+  width: 1200px; /* Adjust depending on desired size */
   object-fit: contain;
   z-index: 1;
   pointer-events: none;
   transform: scale(0);
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
-
+/* Tabla talles */
 .divTalles {
   font-variant: small-caps;
   width: 80%;
@@ -268,13 +301,61 @@
   border-collapse: collapse; /* Remove spaces between cells */
   width: 100%;
   margin-bottom: 30px;
-  .tr .th {
-    border: 1px solid black;
-  }
-  .tr .td {
-    border: 1px solid black;
-  }
-  
+}
+.table th,
+.table td {
+  text-align: center;
+  line-height: 2em;
+  border: 1px solid black;
+}
+
+/* pagina Hola */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-content: center;  
+}
+.about {
+  text-align: justify;
+  font-size: larger;
+  grid-column: 1/3; /* Spans two columns (1 to 2) */
+  grid-row: 1; /* Occupies two rows (1 to 1) */
+}
+
+.aboutFlavor {
+  grid-column: 1/3; /* Spans two columns (1 to 2) */
+  grid-row: 2/3; /* Occupies two rows (2 to 2) */
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0px -210px;
+}
+
+
+.aboutAnita {
+  grid-column: 3; /* Starts at column 3 and ends at column 4 (inclusive) */
+  grid-row: 1/3;
+}
+
+
+
+.tallesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.tallesContainerB {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
 /*Footer*/
@@ -303,6 +384,7 @@
   }
   .botonNav:hover::after {
     opacity: 1;
+    transform: scale(1);
   }
   
   .card:hover::before {
