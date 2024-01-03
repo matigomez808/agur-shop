@@ -1,5 +1,5 @@
 import styles from '@Styles/page.module.css'
-import SVGCart from '@Icons/ShoppingCart'
+import SVGCart from 'Components/icons/ShoppingCart'
 import Image from 'next/image'
 import Link from 'next/link';
 
@@ -12,7 +12,7 @@ function Navbar() {
         <div className={styles.logoNav} >
           <Image
           
-            src="/agurLogoB.svg"
+            src="/agurLogoB.png"
             alt="Agur Logo"
             width={115}
             height={115}

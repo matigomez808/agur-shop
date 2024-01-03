@@ -92,15 +92,14 @@
 
 /*Titles*/
 .titulo {
-  
   font-size: 3rem;
   text-align: center;
-  
+  padding: 1rem 0;
 }
 .subtitulo {
-  
   font-size: 1.5rem;
   text-align: center;
+  padding: 1rem 0;
 }
 
 
@@ -155,7 +154,7 @@
 
 /* Banner Info */
 .bannerInfo {
-  
+  padding: 1rem 0;
   display: flex;
   width: 110%;
   margin: 20px 0;
@@ -177,7 +176,7 @@
 /* Banner Pagos */
 
 .bannerPago {
-  
+  padding: 1rem 0;
   display: flex;
   width: 120%;
   margin: 20px 0;
@@ -408,6 +407,15 @@
     background-color: rgb(var(--amarillo-agur-rgb));
   }
 
+}
+
+/* Modal */
+
+.modalDiv {
+  position:absolute;
+  height: 70vh;
+  width: 50vw;
+  
 }
 
 

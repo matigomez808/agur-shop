@@ -1,4 +1,4 @@
-import TablaTalles from '@/Components/TablaTalles'
+import TablaTalles from 'Components/TablaTalles'
 import RootLayout from '@/layout';
 
 function paginaTalles() {

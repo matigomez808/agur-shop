@@ -1,8 +1,8 @@
 
 import { Montserrat } from 'next/font/google'
-import Navbar from '@Components/Navbar'
-import Footer from '@Components/Footer'
-import Container from '@Components/Container'
+import Navbar from 'Components/Navbar'
+import Footer from 'Components/Footer'
+import Container from 'Components/Container'
 import './styles/globals.css'
 import styles from '@Styles/page.module.css'
 

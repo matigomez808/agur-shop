@@ -1,7 +1,7 @@
 import styles from '@Styles/page.module.css'
-import SVGCard from '@Icons/CreditCard'
-import SVGBag from '@Icons/ShoppingBag';
-import SVGTransfer from '@Icons/Transfer';
+import SVGCard from 'Components/icons/CreditCard'
+import SVGBag from 'Components/icons/ShoppingBag';
+import SVGTransfer from 'Components/icons/Transfer';
 
 function BannerPago() {
     return (

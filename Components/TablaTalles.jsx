@@ -5,7 +5,7 @@ import bajoBusto from '../../public/images/bajoBusto.png'
 import tiro from '../../public/images/tiro.png'
 import radio from '../../public/images/radio.png'
 import cadera from '../../public/images/cadera.png'
-import Container from '@Components/Container';
+import Container from 'Components/Container';
 
 
 const TablaTalles = () => {

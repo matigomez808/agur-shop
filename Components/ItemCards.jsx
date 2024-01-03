@@ -1,9 +1,11 @@
+
 import styles from '@Styles/page.module.css'
 import Image from 'next/image';
 
+
 function ItemCards(product) {
     const newProd = {...product.data};
-
+    
     return (
         <div className={styles.card} >
             
