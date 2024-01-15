@@ -1,9 +1,9 @@
 
-import Shop from 'Components/Shop'
-import Titulo from 'Components/Titulo'
-import BannerCollage from 'Components/BannerCollage'
-import BannerPago from 'Components/BannerPago';
-import BannerInfo from 'Components/BannerInfo';
+import Shop from 'Components/Shop/Shop'
+import Titulo from 'Components/Titulo/Titulo'
+import BannerCollage from '@Components/BannerCollage/BannerCollage'
+import BannerPago from 'Components/BannerPago/BannerPago';
+import BannerInfo from 'Components/BannerInfo/BannerInfo';
 
 import { Suspense } from 'react';
 import Loading from './loading';

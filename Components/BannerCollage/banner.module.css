@@ -1,0 +1,74 @@
+/*Banner Collage*/
+
+.BannerCollage {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  height: 55vh;
+  grid-gap: 7px;
+}
+
+.BannerItem1 {
+  background-image: url("../../public/images/assetsB-3.png");
+  background-size: cover;
+  background-position: 0px -680px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.BannerItem2 {
+  background-image: url("../../public/images/assetsB-1.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/2;
+  grid-row: 2/5;
+}
+
+.BannerItem3 {
+  background-image: url("../../public/images/assets-7.png");
+  background-size: cover;
+  background-position: 0px 150px;
+  grid-column: 1/5;
+  grid-row: 5/5;
+}
+
+.BannerItem4 {
+  background-image: url("../../public/images/assetsB-2.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 2/4;
+  grid-row: 2/5;
+}
+
+.BannerItem5 {
+  background-image: url("../../public/images/assetsB-4.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 4/6;
+  grid-row: 1/3;
+}
+
+.BannerItem6 {
+  background-image: url("../../public/images/assetsB.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 4/5;
+  grid-row: 3/5;
+}
+
+.BannerItem7 {
+  background-image: url("../../public/images/assets.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 5/6;
+  grid-row: 3/6;
+}
+
+.BannerItem8 {
+  background-image: url("../../public/images/assetsB-5.png");
+  background-size: cover;
+  background-position: center;
+  grid-column: 6/8;
+  grid-row: 1/6;
+}

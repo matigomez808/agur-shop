@@ -1,10 +1,10 @@
 import styles from '@Styles/page.module.css'
 import Image from 'next/image';
-import busto from '../../public/images/contornoBusto.png'
-import bajoBusto from '../../public/images/bajoBusto.png'
-import tiro from '../../public/images/tiro.png'
-import radio from '../../public/images/radio.png'
-import cadera from '../../public/images/cadera.png'
+import busto from '../public/images/contornoBusto.png'
+import bajoBusto from '../public/images/bajoBusto.png'
+import tiro from '../public/images/tiro.png'
+import radio from '../public/images/radio.png'
+import cadera from '../public/images/cadera.png'
 import Container from 'Components/Container';
 
 
@@ -79,29 +79,35 @@ const TablaTalles = () => {
                 <div>
                     <h4>Busto se mide así:</h4>
                     <Image
-                    src={bajoBusto} />
+                    src={bajoBusto}
+                    alt='Imagen no disponible' />
+                    
                 </div>
                 <div>
                     <h4>Bajo busto se mide así:</h4>
                     <Image
-                    src={busto} />
+                    src={busto}
+                    alt='Imagen no disponible' />
                 </div>
                 <div>
                     <h4>Cadera se mide así:</h4>
                     <Image
-                    src={cadera} />
+                    src={cadera}
+                    alt='Imagen no disponible' />
                 </div>
             </div>
             <div className={styles.tallesContainerB}>
                 <div>
                     <h4>Radio se mide así:</h4>
                     <Image
-                    src={radio} />
+                    src={radio}
+                    alt='Imagen no disponible' />
                 </div>
                 <div>
                     <h4>Alto de tiro se mide así:</h4>
                     <Image
-                    src={tiro} />
+                    src={tiro}
+                    alt='Imagen no disponible' />
                 </div>
             </div>
         </div>

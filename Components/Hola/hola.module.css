@@ -1,0 +1,31 @@
+/* pagina Hola */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.about {
+  text-align: justify;
+  font-size: larger;
+  grid-column: 1/3; /* Spans two columns (1 to 2) */
+  grid-row: 1; /* Occupies two rows (1 to 1) */
+}
+
+.aboutFlavor {
+  grid-column: 1/3; /* Spans two columns (1 to 2) */
+  grid-row: 2/3; /* Occupies two rows (2 to 2) */
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0px -210px;
+}
+
+.aboutAnita {
+  grid-column: 3; /* Starts at column 3 and ends at column 4 (inclusive) */
+  grid-row: 1/3;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0px -10px;
+}
