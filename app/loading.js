@@ -1,0 +1,4 @@
+export default function Loading() {
+    
+    return <p>We loadin here!</p>
+}

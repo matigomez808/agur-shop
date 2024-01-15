@@ -4,11 +4,11 @@ import Titulo from 'Components/Titulo'
 import BannerCollage from 'Components/BannerCollage'
 import BannerPago from 'Components/BannerPago';
 import BannerInfo from 'Components/BannerInfo';
-import { fetchProducts } from 'utils/api';
+
+import { Suspense } from 'react';
+import Loading from './loading';
 
 
-
-const shopData = await fetchProducts();
 
 export default function Home() {
   
@@ -19,7 +19,11 @@ export default function Home() {
       <BannerInfo />
       <BannerCollage />
       <BannerPago />
-      <Shop products={shopData}/>
+      
+      <Suspense fallback={<Loading />}>
+        <Shop />
+      </Suspense>
+      
     </>
   )
 }
