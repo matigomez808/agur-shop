@@ -1,12 +1,8 @@
-import TablaTalles from 'Components/TablaTalles'
-import RootLayout from '@/layout';
+import TablaTalles from "Components/TablaTalles/TablaTalles";
+import RootLayout from "@/layout";
 
 function paginaTalles() {
-  return (
-    
-      <TablaTalles />
-    
-  )
+  return <TablaTalles />;
 }
 
 export default paginaTalles;

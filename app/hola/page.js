@@ -1,11 +1,7 @@
-import Hola from "Components/Hola";
+import Hola from "Components/Hola/Hola";
 import RootLayout from "@/layout";
 
 function paginaHola() {
-    return(
-        
-            <Hola />
-        
-    )
+  return <Hola />;
 }
 export default paginaHola;

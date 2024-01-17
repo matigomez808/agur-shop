@@ -1,11 +1,11 @@
 import styles from './talles.module.css'
 import Image from 'next/image';
-import busto from '../public/images/contornoBusto.png'
-import bajoBusto from '../public/images/bajoBusto.png'
-import tiro from '../public/images/tiro.png'
-import radio from '../public/images/radio.png'
-import cadera from '../public/images/cadera.png'
-import Container from 'Components/Container';
+import busto from '../../public/images/contornoBusto.png'
+import bajoBusto from '../../public/images/bajoBusto.png'
+import tiro from '../../public/images/tiro.png'
+import radio from '../../public/images/radio.png'
+import cadera from '../../public/images/cadera.png'
+import Container from 'Components/Container/Container';
 
 
 const TablaTalles = () => {

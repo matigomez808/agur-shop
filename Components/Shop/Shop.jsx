@@ -1,5 +1,5 @@
 
-import ItemCards from 'Components/ItemCards';
+import ItemCards from 'Components/ItemCards/ItemCards';
 import styles from './shop.module.css';
 
 async function getData() {
