@@ -1,5 +1,5 @@
 "use client";
-import styles from "@Styles/page.module.css";
+import styles from "./card.module.css";
 import Image from "next/image";
 import ProductModal from "../ProductModal/ProductModal";
 import { useState } from "react";

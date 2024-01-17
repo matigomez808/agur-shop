@@ -1,6 +1,6 @@
 
 import ItemCards from 'Components/ItemCards';
-import styles from '@Styles/page.module.css';
+import styles from './shop.module.css';
 
 async function getData() {
   const res = await fetch('http://localhost:3000/api/productos')
@@ -14,20 +14,20 @@ async function getData() {
 
 const Shop = async () => {
   const products = await getData();
-  
+
   if (!products) {
-    return <h1>Loading... Please wait a moment.</h1>; 
+    return <h1>Loading... Please wait a moment.</h1>;
   }
-  
+
   return (
     <div className={styles.shop}>
       {products && products?.map((product, idx) => (
-        
+
         <ItemCards key={idx} product={product} />
-        ))
+      ))
       }
     </div>
   );
-      }
+}
 
 export default Shop;

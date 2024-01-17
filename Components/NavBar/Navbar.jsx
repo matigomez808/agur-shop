@@ -1,4 +1,4 @@
-import styles from '@Styles/page.module.css'
+import styles from './nav.module.css'
 import SVGCart from 'Components/icons/ShoppingCart'
 import Image from 'next/image'
 import Link from 'next/link';
