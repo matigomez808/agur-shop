@@ -1,6 +1,9 @@
 
 import ItemCards from 'Components/ItemCards/ItemCards';
+import { Grid } from '@mui/material';
 import styles from './shop.module.css';
+
+
 
 async function getData() {
   const res = await fetch('http://localhost:3000/api/productos')
@@ -13,6 +16,7 @@ async function getData() {
 }
 
 const Shop = async () => {
+  
   const products = await getData();
 
   if (!products) {
@@ -20,13 +24,13 @@ const Shop = async () => {
   }
 
   return (
-    <div className={styles.shop}>
+    <Grid container spacing={2}>
       {products && products?.map((product, idx) => (
 
         <ItemCards key={idx} product={product} />
       ))
       }
-    </div>
+    </Grid>
   );
 }
 
