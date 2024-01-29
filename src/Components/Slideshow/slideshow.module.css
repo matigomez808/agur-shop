@@ -1,0 +1,15 @@
+.next{
+  content: "";
+  border-radius: 50%;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+}
+
+.prev {
+  content: "";
+  border-radius: 50%;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+}
