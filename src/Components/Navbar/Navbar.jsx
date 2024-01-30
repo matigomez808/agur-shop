@@ -32,7 +32,7 @@ function Navbar() {
           <Button href={'/talles'} className={styles.botonNav}>Talles</Button>
         </Box>
         
-        <Link href={'/cart'} className={styles.botonNav} ><SVGCart width='35' /></Link>    
+          
         <Cart />
       </Box>
     

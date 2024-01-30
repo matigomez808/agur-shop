@@ -9,14 +9,16 @@ import ListItemText from '@mui/material/ListItemText';
 import { Checkroom, ShoppingCart } from '@mui/icons-material';
 import { ShoppingBag } from '@mui/icons-material';
 import { ListItemButton, ListItemIcon, Typography } from '@mui/material';
-import useCartStore from 'src/utils/store';
+import useCartStore from 'src/utils/cartStore';
 import { Remove } from '@mui/icons-material';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-
+import { useRouter } from 'next/navigation';
+import styles from './cart.module.css'
 
 export default function TemporaryDrawer() {
   const [isOpen, setIsOpen] = React.useState(false);
   const { items, total, addItem, removeItem } = useCartStore();
+  const router = useRouter();
 
   const toggleDrawer = () => {
 
@@ -27,15 +29,20 @@ export default function TemporaryDrawer() {
     removeItem(item);
   }
 
+  const handleCheckout = () => {
+
+    router.push('/checkout');
+  };
+
   const list = () => (
     <Box
       sx={{ width: 400 }}
       role="presentation"
-      
+
     >
       <List>
         <ListItem>
-        <Typography variant='h5' component='p' >Tu Carrito</Typography>
+          <Typography variant='h5' component='p' >Tu Carrito</Typography>
         </ListItem>
         <Divider />
         <ListItem key="labels" disablePadding sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -70,23 +77,14 @@ export default function TemporaryDrawer() {
         ))}
         <Divider />
       </List>
-      <ListItem sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <ListItem key='subtotal'>
         <ListItemText sx={{ flex: 1, minWidth: 120 }}>Total:</ListItemText>
         <ListItemText sx={{ flex: 1, minWidth: 80 }}>${total}</ListItemText>
       </ListItem>
 
       <Divider />
 
-      <ListItem sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', height: '100%' }}>
-        <Divider />
 
-        <ListItemButton sx={{ width: '100%', maxHeight: '1.5rem' }}>
-          <Typography variant="h6" component="span" sx={{ flex: 1 }}>Ir al Checkout</Typography>
-          <ListItemIcon>
-            <ShoppingCartCheckoutIcon />
-          </ListItemIcon>
-        </ListItemButton>
-      </ListItem>
     </Box>
   );
 
@@ -94,7 +92,16 @@ export default function TemporaryDrawer() {
 
 
     <Box>
-      <Button onClick={toggleDrawer}><ShoppingBag /></Button>
+      <Button
+        onClick={toggleDrawer}
+        className={styles.botonNav}>
+
+        <ShoppingBag sx={{
+          width: '2rem',
+          height: '2rem',
+          color: 'black'
+        }} />
+      </Button>
       <Drawer
         anchor='right'
         open={isOpen}
@@ -102,6 +109,27 @@ export default function TemporaryDrawer() {
         sx={{ display: 'flex', opacity: 1, zIndex: 1000 }}
       >
         {list()}
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-end',
+            justifyContent: 'flex-end',
+            flexGrow: 2
+          }}>
+          <ListItem >
+
+
+            <ListItemButton
+              sx={{ width: '100%', maxHeight: '2rem' }}
+              onClick={handleCheckout}>
+              <Typography variant="h6" component="span" sx={{ flex: 1 }}>Ir al Checkout</Typography>
+              <ListItemIcon>
+                <ShoppingCartCheckoutIcon />
+              </ListItemIcon>
+            </ListItemButton>
+          </ListItem>
+        </Box>
       </Drawer>
     </Box>
 

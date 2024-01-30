@@ -4,7 +4,7 @@ import Image from "next/image";
 import ProductModal from "../ProductModal/ProductModal";
 import { Paper, Typography, Grid, Box, Button } from "@mui/material";
 import { motion } from "framer-motion";
-import useCartStore from "src/utils/store";
+import useCartStore from "src/utils/cartStore";
 import { useEffect } from "react";
 
 function ItemCards({ product }) {
