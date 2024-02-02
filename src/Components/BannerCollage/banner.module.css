@@ -10,7 +10,7 @@
 }
 
 .BannerItem1 {
-  background-image: url("../../../public/images/assetsB-3.png");
+  background-image: url("../../../public/images/assetsB-3.webp");
   background-size: cover;
   background-position: 0px -680px;
   grid-column: 1/4;
@@ -18,7 +18,7 @@
 }
 
 .BannerItem2 {
-  background-image: url("../../../public/images/assetsB-1.png");
+  background-image: url("../../../public/images/assetsB-1.webp");
   background-size: cover;
   background-position: center;
   grid-column: 1/2;
@@ -26,7 +26,7 @@
 }
 
 .BannerItem3 {
-  background-image: url("../../../public/images/assets-7.png");
+  background-image: url("../../../public/images/assets-7.webp");
   background-size: cover;
   background-position: 0px 150px;
   grid-column: 1/5;
@@ -34,7 +34,7 @@
 }
 
 .BannerItem4 {
-  background-image: url("../../../public/images/assetsB-2.png");
+  background-image: url("../../../public/images/assetsB-2.webp");
   background-size: cover;
   background-position: center;
   grid-column: 2/4;
@@ -42,7 +42,7 @@
 }
 
 .BannerItem5 {
-  background-image: url("../../../public/images/assetsB-4.png");
+  background-image: url("../../../public/images/assetsB-4.webp");
   background-size: cover;
   background-position: center;
   grid-column: 4/6;
@@ -50,7 +50,7 @@
 }
 
 .BannerItem6 {
-  background-image: url("../../../public/images/assetsB.png");
+  background-image: url("../../../public/images/assetsB.webp");
   background-size: cover;
   background-position: center;
   grid-column: 4/5;
@@ -58,7 +58,7 @@
 }
 
 .BannerItem7 {
-  background-image: url("../../../public/images/assets.png");
+  background-image: url("../../../public/images/assets.webp");
   background-size: cover;
   background-position: center;
   grid-column: 5/6;
@@ -66,7 +66,7 @@
 }
 
 .BannerItem8 {
-  background-image: url("../../../public/images/assetsB-5.png");
+  background-image: url("../../../public/images/assetsB-5.webp");
   background-size: cover;
   background-position: center;
   grid-column: 6/8;

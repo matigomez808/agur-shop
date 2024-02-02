@@ -1,10 +1,10 @@
 import styles from './talles.module.css'
 import Image from 'next/image';
-import busto from '../../../public/images/contornoBusto.png'
-import bajoBusto from '../../../public/images/bajoBusto.png'
-import tiro from '../../../public/images/tiro.png'
-import radio from '../../../public/images/radio.png'
-import cadera from '../../../public/images/cadera.png'
+import busto from '../../../public/images/contornoBusto.webp'
+import bajoBusto from '../../../public/images/bajoBusto.webp'
+import tiro from '../../../public/images/tiro.webp'
+import radio from '../../../public/images/radio.webp'
+import cadera from '../../../public/images/cadera.webp'
 import Container from 'src/Components/Container/Container';
 
 
