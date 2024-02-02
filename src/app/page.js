@@ -4,7 +4,7 @@ import BannerCollage from "src/Components/BannerCollage/BannerCollage";
 import BannerPago from "src/Components/BannerPago/BannerPago";
 import BannerInfo from "src/Components/BannerInfo/BannerInfo";
 import { Suspense } from "react";
-import Loading from "./loading";
+//import Loading from "./loading";
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
       <BannerInfo />
       <BannerCollage />
       <BannerPago />
-      <Suspense fallback={<Loading />}>
-        <Shop />
-      </Suspense>
+      {/* //<Suspense fallback={<Loading />}> */}
+          <Shop />
+      {/* </Suspense> */}
     </>
   );
 }

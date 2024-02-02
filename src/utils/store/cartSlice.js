@@ -1,6 +1,4 @@
-import { create } from "zustand";
-
-const useCartStore = create((set) => ({
+export const createCartSlice = (set) => ({
   items: [],
   total: 0,
   addItem: (item) =>
@@ -47,6 +45,5 @@ const useCartStore = create((set) => ({
         total: updatedTotal,
       };
     }),
-}));
+});
 
-export default useCartStore;

@@ -24,6 +24,7 @@
     "popmotion": "^11.0.5",
     "react": "^18",
     "react-dom": "^18",
+    "validator": "^13.11.0",
     "zustand": "^4.5.0"
   },
   "devDependencies": {

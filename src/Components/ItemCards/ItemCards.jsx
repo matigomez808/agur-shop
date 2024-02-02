@@ -4,13 +4,14 @@ import Image from "next/image";
 import ProductModal from "../ProductModal/ProductModal";
 import { Paper, Typography, Grid, Box, Button } from "@mui/material";
 import { motion } from "framer-motion";
-import useCartStore from "src/utils/cartStore";
-import { useEffect } from "react";
+import useMyBoundStore from "src/utils/store/store";
+import Skeleton from "@mui/material/Skeleton";
+
 
 function ItemCards({ product }) {
 
   const newProd = { ...product };
-  const { items, total, addItem } = useCartStore();
+  const addItem  = useMyBoundStore((state) => state.addItem);
 
   const handleClick = (product) => {
     addItem(product);
@@ -55,6 +56,7 @@ function ItemCards({ product }) {
           initial='initial'
           whileHover='animate'
           animate='initial'>
+            {product ? ( <>
           <Image
             src={newProd.imagen}
             alt="imagen no disponible"
@@ -115,6 +117,7 @@ function ItemCards({ product }) {
               </Button>
             </Box>
           </motion.div>
+          </>) : (<Skeleton variant="rectangular" width={275} height={345} />)}
         </motion.div>
       </Paper>
     </Grid>

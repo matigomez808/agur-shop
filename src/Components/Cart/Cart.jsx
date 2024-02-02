@@ -9,15 +9,16 @@ import ListItemText from '@mui/material/ListItemText';
 import { Checkroom, ShoppingCart } from '@mui/icons-material';
 import { ShoppingBag } from '@mui/icons-material';
 import { ListItemButton, ListItemIcon, Typography } from '@mui/material';
-import useCartStore from 'src/utils/cartStore';
 import { Remove } from '@mui/icons-material';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import { useRouter } from 'next/navigation';
 import styles from './cart.module.css'
+import useMyBoundStore from 'src/utils/store/store';
 
 export default function TemporaryDrawer() {
   const [isOpen, setIsOpen] = React.useState(false);
-  const { items, total, addItem, removeItem } = useCartStore();
+  const items = useMyBoundStore((state) => state.items);
+  const total = useMyBoundStore((state) => state.total)
   const router = useRouter();
 
   const toggleDrawer = () => {
@@ -30,7 +31,7 @@ export default function TemporaryDrawer() {
   }
 
   const handleCheckout = () => {
-
+    toggleDrawer();
     router.push('/checkout');
   };
 
