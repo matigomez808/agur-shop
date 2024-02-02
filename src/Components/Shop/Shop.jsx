@@ -18,7 +18,7 @@ async function getData() {
 const Shop = async () => {
   
   const products = await getData();
-  /* console.log(products) */
+  
 
   if (!products) {
     return <h1>Loading... Please wait a moment.</h1>;

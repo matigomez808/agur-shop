@@ -14,13 +14,13 @@ const Hola = () => {
       </p>
       <Image
         className={styles.aboutFlavor}
-        src='/images/assetsC-1.png'
+        src='/images/assetsC-1.webp'
         alt='Imagen no disponible'
         width='1000'
         height='555' />
       <Image
         className={styles.aboutAnita}
-        src='/images/assetsC.png'
+        src='/images/assetsC.webp'
         alt="Esta es una foto de anita"
         height='500'
         width='400' />

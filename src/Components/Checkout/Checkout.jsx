@@ -41,19 +41,16 @@ export default function Checkout() {
         setShippingLocation(formValues.provincia);
       }
       setActiveStep((prevActiveStep) => prevActiveStep + 1);
-      
+
     } else {
     }
   };
-
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
-
   const handleReset = () => {
     setActiveStep(0);
   };
-
   const buttons = () => {
     return (
       <React.Fragment>
@@ -74,43 +71,38 @@ export default function Checkout() {
     )
   }
   const list = () => (
-  
-      <Paper>
-        <List>
-          {items && items?.map((item, index) => (
-            <ListItem key={index} disablePadding sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <ListItemIcon>
-                <Checkroom />
-              </ListItemIcon>
-              <ListItemText sx={{ flex: 1, minWidth: 120 }}>{item.nombre}</ListItemText>
-              <ListItemText sx={{ flex: 1, minWidth: 80 }}>${item.precio}</ListItemText>
-              <ListItemText sx={{ flex: 1, minWidth: 80 }}>{item.quantity}</ListItemText>
-            </ListItem>
-          ))}
-          <Divider />
-          <ListItem sx={{display:'flex'}}>
-            {shippingPrice && <><ListItemText >Envío: </ListItemText> <Box sx={{flexGrow:2}}></Box> <ListItemText>${shippingPrice}</ListItemText></>}
-            
-          </ListItem>
-          <ListItem sx={{display:'flex'}}>
-            
-            <ListItemText >Carrito: </ListItemText>
-            <Box sx={{flexGrow:2}}></Box>
-            <ListItemText>${total}</ListItemText>
-            
-            
-          </ListItem>
-          <ListItem sx={{display:'flex'}}>
-            <Divider flexItem />
-            <ListItemText >Total: </ListItemText>
-            <Box sx={{flexGrow:2}}></Box>
-            <ListItemText>${total + shippingPrice}</ListItemText>
-          </ListItem>
-        </List>
-      </Paper>
-    
-  )
 
+    <Paper sx={{ mt: 2 }}>
+      <List>
+        {items && items?.map((item, index) => (
+          <ListItem key={index} disablePadding sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <ListItemIcon>
+              <Checkroom />
+            </ListItemIcon>
+            <ListItemText sx={{ flex: 1, minWidth: 120 }}>{item.nombre}</ListItemText>
+            <ListItemText sx={{ flex: 1, minWidth: 80 }}>${item.precio}</ListItemText>
+            <ListItemText sx={{ flex: 1, minWidth: 80 }}>{item.quantity}</ListItemText>
+          </ListItem>
+        ))}
+        <Divider />
+
+        <ListItem sx={{ display: 'flex' }}>
+          <ListItemText >Carrito: </ListItemText>
+          <Box sx={{ flexGrow: 2 }}></Box>
+          <ListItemText>${total}</ListItemText>
+        </ListItem>
+        <ListItem sx={{ display: 'flex' }}>
+          {shippingPrice && <><ListItemText >Envío: </ListItemText> <Box sx={{ flexGrow: 2 }}></Box> <ListItemText>${shippingPrice}</ListItemText></>}
+        </ListItem>
+        <ListItem sx={{ display: 'flex' }}>
+          <Divider flexItem />
+          <ListItemText >Total: </ListItemText>
+          <Box sx={{ flexGrow: 2 }}></Box>
+          <ListItemText>${total + shippingPrice}</ListItemText>
+        </ListItem>
+      </List>
+    </Paper>
+  )
   return (
     <Box>
       <Box sx={{ width: '100%' }}>
@@ -127,7 +119,6 @@ export default function Checkout() {
         </Stepper>
         {activeStep === steps.length ? (
           <React.Fragment>
-
             <Typography sx={{ mt: 2, mb: 1 }}>
               All steps completed - you&apos;re finished
             </Typography>
@@ -139,23 +130,23 @@ export default function Checkout() {
         ) : activeStep === 0 ? (
           <React.Fragment>
             <FormPersonalInfo />
+            {list()}
             {buttons()}
-
           </React.Fragment>
-
         ) : activeStep === 1 ? (
           <React.Fragment>
             <FormShipping />
+            {list()}
             {buttons()}
           </React.Fragment>
         ) : (
           <React.Fragment>
             <FormPaymentOptions />
+            {list()}
             {buttons()}
           </React.Fragment>
         )}
       </Box>
-      {list()}
     </Box>
   );
 }
