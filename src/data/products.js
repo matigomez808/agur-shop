@@ -1,4 +1,4 @@
-export const products = 
+export const PRODUCTS = 
 [
   {
     _id: '659d82b1514d04b396935005',
