@@ -1,0 +1,19 @@
+/* Banner Info */
+.bannerInfo {
+  padding: 1rem 0;
+  display: flex;
+  
+  margin: 20px 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--azul-agur-rgb));
+}
+
+.bannerInfo p {
+  display: flex;
+  line-height: 100%;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+}

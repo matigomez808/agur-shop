@@ -1,0 +1,8 @@
+.shape {
+  background-color: rgba(var(--rosa-agur-rgb), 0.8); 
+  border-radius: 50%; 
+  left: -54%;
+  height: 361px;
+  width: 1461px;
+  position:relative;
+}
